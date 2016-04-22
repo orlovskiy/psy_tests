@@ -25,7 +25,11 @@ $(function(){
   	$('.question .slider-container').each(function(){
   		var question_id = $(this).parent().attr('id')
   		var amount = $(this).find('#amount')
+<<<<<<< HEAD
   		answers[question_id] = amount.val()\
+=======
+  		answers[question_id] = amount.val()
+>>>>>>> master
   	});
   	/*console.log(answers)*/
   	$('#results').slideDown('fast', function(){})
