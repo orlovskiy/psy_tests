@@ -1,0 +1,28 @@
+.question{
+	margin-left: 3%;
+	width: 90%;
+}
+.question p{
+	vertical-align: middle;
+	display: inline-block;
+	min-width: 400px;
+	width:45%;
+	margin-right: 4%;
+}
+.slider-container{
+	display: inline-block;
+	min-width: 280px;
+	width: 50%;
+}
+
+#slider{
+	vertical-align: middle;
+	display: inline-block;
+	width: 200px;
+	margin-left: 4%;
+}
+#amount{
+	vertical-align: middle;
+	font-size: 20px;
+	margin-left: 13%;
+}
