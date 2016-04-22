@@ -21,36 +21,8 @@
 	width: 200px;
 	margin-left: 4%;
 }
-.ui-state-focus{
-	outline:none;
-}
-.ui-state-hover{
-	box-shadow: 0px 0px 3px black;
-}
 #amount{
-	display: inline-block;
 	vertical-align: middle;
 	font-size: 20px;
 	margin-left: 13%;
 }
-.result_button{
-	text-align: center;
-	margin-top: 40px;
-}
-.show_result {
-	outline: none;
-	display: inline-block;
-	width: 249px;
-	height: 59px;
-	border: 1px solid #56c7ff;
-	color: white;
-	border-radius: 4px;
-	background: #56c7ff;
-	font-size: 15px;
-}
-.show_result:hover {
-	cursor: pointer; }
-.show_result:active {
-	box-shadow: inset 0px 0px 8px black;
-	outline: none;
-	border: none; }
