@@ -1,0 +1,101 @@
+body{
+	background-color: #73D3BB;
+	text-align: center;
+}
+.anon_id{
+	text-align: center;
+	font-size: 15px;
+	width: 150px;
+	height: 30px;
+	border-radius: 30px;
+	border:none;
+	max-width: 80px;
+	box-shadow: inset 1px 1px 2px 1px rgb(180,180,180);
+}
+.poehal{
+display: inline-block;
+}
+.wrapper_p{
+	margin-top: 25%;
+	height: 50px;
+	position: relative;
+	display: block;
+	text-align: center;
+}
+.wrapper_d{
+	margin-top: 25%;
+	height: 50px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.wrapper2{
+	min-height: 50px;
+	text-align: center;
+}
+.wrapper2_d{
+	min-height: 50px;
+}
+.desc_wrap{
+	margin-bottom: 20px;
+}
+.description1{
+	display: inline-block;
+	width: 400px;
+}
+
+.testfield{
+	display: inline-block;
+
+}
+.testfield_d{
+	display: inline-block;
+
+}
+.poehal{
+	color:white;
+}
+.perk{
+	display:inline-block;
+
+
+}
+.perk_d{
+	display:inline-block;
+}
+span.l {
+	width: 350px;
+	height: 100px;
+	background-color: red;
+}
+.result_wrap{
+	display: none;
+	-webkit-transition: all .4s ease-in-out;
+}
+table{	
+
+
+		border-collapse: collapse;
+		margin-bottom: 20px;
+}
+td.parametr{
+
+	min-width: 110px;
+}
+.norm td.parametr{
+width: 110px;
+
+}
+.table3 table{
+
+}
+td{
+	width: 50px;
+	height: 20px;
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+.m_parameters{
+	width: 110px;
+}

@@ -1,0 +1,132 @@
+body{
+	background-color: #73D3BB;
+	text-align: center;
+}
+.diagram_container{
+	position: relative;
+	min-width: 530px;
+	display: inline-block;
+
+}
+.marks{
+	display: inline-block;
+	width: 20px;
+	vertical-align: top;
+
+}
+.marks div{
+	color:white;
+	font-size: 20px;
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+
+}
+.marks div:nth-child(1){
+	top:40px;
+}
+.marks div:nth-child(2){
+	top:90px;
+}
+.marks div:nth-child(3){
+	top:140px;
+}
+
+.scale{
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	width: 500px;
+	height: 200px;
+	border-radius:30px;
+	box-shadow: inset 3px 3px 3px 3px rgb(180,180,180);
+	overflow: hidden;
+
+}
+.guides{
+	position: absolute;
+	width: 500px;
+	border:1px dashed grey;
+}
+.guides:nth-child(1){
+	top: 50px;
+}
+.guides:nth-child(2){
+	top: 100px;	
+}
+.guides:nth-child(3){
+	top: 150px;
+}
+.bottom_fixer{
+	display: inline-block;
+	height: 100%;
+	background-color: green;
+	vertical-align: bottom;
+}
+.profile_data{
+	-webkit-filter:drop-shadow(2px 2px 1px grey);
+	margin-right: 20px;
+	width: 45px;
+	position: relative;
+	bottom:-0px;
+	display: inline-block;
+	background-color: red;
+	min-height: 10px;
+	vertical-align: bottom;
+	border-radius: 4px;
+
+}
+.profile_data:last-child{
+	margin-right: 0;
+}
+.class_master{
+
+}
+.data_class{
+	display: inline-block;
+	color:white;
+	margin-right: 23px;
+
+}
+.data_class:last-child{
+	margin-right: 0;
+}
+.data_class:first-child{
+	margin-left: 27px;
+}
+
+.less_data{
+	width: 56px;
+}
+
+.less_data_classes{
+	margin-right: 54px;
+}
+.less_data_classes:first-child{
+	margin-left: 33px;
+}
+.balance_marks div{
+	color:white;
+	left: 0;
+	font-size: 20px;
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+}
+
+
+
+.balance_data{
+	max-height: 200px;
+	min-height: 10px;
+	
+	vertical-align: bottom;
+	width: 135px;
+}
+.balance_data_class{
+	display: inline-block;
+	margin-right: 140px;
+}
+.balance_diagram_container{
+	
+}

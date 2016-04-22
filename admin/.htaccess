@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "asdasdasd"
+AuthUserFile  /Applications/XAMPP/xamppfiles/htdocs/testirovanie/admin/.htpasswd
+Require valid-user

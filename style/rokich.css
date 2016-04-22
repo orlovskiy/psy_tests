@@ -1,0 +1,149 @@
+.main_container {
+  text-align: center; }
+  .main_container .rules_again {
+    display: inline-block;
+    position: absolute;
+    margin-right: 10%; }
+  .main_container .description {
+    text-align: center;
+    display: inline-block;
+    width: 50%; }
+    .main_container .description p {
+      text-align: left; }
+    .main_container .description .gotit {
+      outline: none;
+      display: inline-block;
+      width: 249px;
+      height: 59px;
+      border: 1px solid #56c7ff;
+      color: white;
+      border-radius: 4px;
+      background: #56c7ff;
+      font-size: 15px; }
+    .main_container .description .gotit:hover {
+      cursor: pointer; }
+    .main_container .description input.gotit:active {
+      box-shadow: inset 0px 0px 8px black;
+      outline: none;
+      border: none; }
+  .main_container .cap {
+    display: none;
+    position: absolute;
+    top: -24px;
+    border-radius: 4px 4px 0px 0px;
+    height: 20px;
+    right: 37%;
+    display: inline-block;
+    width: 24%;
+    background-color: transparent;
+    border: 2px solid black; }
+  .main_container .perks1_container, .main_container #answers1 {
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    width: 30%;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .4s ease-in-out; }
+    .main_container .perks1_container .perks_a, .main_container #answers1 .perks_a {
+      display: none;
+      width: 100%;
+      opacity: 0; }
+      .main_container .perks1_container .perks_a .perk, .main_container #answers1 .perks_a .perk {
+        display: inline-block;
+        width: 100%;
+        min-height: 24px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        background-color: #56c7ff; }
+        .main_container .perks1_container .perks_a .perk .fixer, .main_container #answers1 .perks_a .perk .fixer {
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle; }
+        .main_container .perks1_container .perks_a .perk p, .main_container #answers1 .perks_a .perk p {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0; }
+      .main_container .perks1_container .perks_a .perk:last-child, .main_container #answers1 .perks_a .perk:last-child {
+        margin-bottom: 0; }
+  .main_container .perks_b {
+    display: none;
+    width: 100%;
+    opacity: 0; }
+    .main_container .perks_b .perk {
+      display: inline-block;
+      width: 100%;
+      min-height: 24px;
+      border-radius: 4px;
+      margin-bottom: 4px;
+      background-color: #56c7ff; }
+      .main_container .perks_b .perk .fixer {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .main_container .perks_b .perk p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0; }
+    .main_container .perks_b .perk:last-child {
+      margin-bottom: 0; }
+  .main_container .done_button {
+    display: block;
+    margin: auto;
+    outline: none;
+    width: 249px;
+    height: 59px;
+    border: 1px solid #56c7ff;
+    color: white;
+    border-radius: 4px;
+    background: #56c7ff;
+    font-size: 15px;
+    bottom: 3%;
+    opacity: 0; }
+  .main_container .done_button:hover {
+    cursor: pointer; }
+  .main_container input.done_button:active {
+    box-shadow: inset 0px 0px 8px black;
+    outline: none;
+    border: none; }
+  .main_container #test_done {
+    display: none;
+    margin: auto;
+    outline: none;
+    width: 249px;
+    height: 59px;
+    border: 1px solid #56c7ff;
+    color: white;
+    border-radius: 4px;
+    background: #56c7ff;
+    font-size: 15px;
+    opacity: 1; }
+  .main_container #test_done:hover {
+    cursor: pointer; }
+  .main_container input#test_done:active {
+    box-shadow: inset 0px 0px 8px black;
+    outline: none;
+    border: none; }
+  .main_container #answers1 {
+    display: none; }
+
+.perks_a_data, .perks_b_data {
+  display: inline-block; }
+
+.tables {
+  display: none; }
+  .tables table {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-collapse: collapse; }
+    .tables table td {
+      border: 1px solid black;
+      width: 100px;
+      height: 20px; }
+    .tables table th {
+      border: 2px solid black; }
+
+/*# sourceMappingURL=rokich.css.map */
