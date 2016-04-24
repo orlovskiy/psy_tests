@@ -11,21 +11,21 @@ $(function(){
 	      max: 5,
 	      step: 1,
 	      slide: function( event, ui ) {
-	      amount.val(gradations[ui.value]);
+	      amount.text(gradations[ui.value]);
 	      /*answers[question_id] = amount.val()
 	      console.log(answers)*/
 	      }
 	    });
 	});
     	$('.question .slider-container').each(function(){
-  		var amount = $(this).find('#amount').val(gradations[$( "#slider" ).slider( "value" )] )
+  		var amount = $(this).find('#amount').text(gradations[$( "#slider" ).slider( "value" )] )
   	});
   });
   $('.show_result').on('click', function(){
   	$('.question .slider-container').each(function(){
   		var question_id = $(this).parent().attr('id')
   		var amount = $(this).find('#amount')
-  		answers[question_id] = amount.val()
+  		answers[question_id] = amount.text()
   	});
     var data_to_send = JSON.stringify(answers)
     var anon_id = $('.anon_id').val()

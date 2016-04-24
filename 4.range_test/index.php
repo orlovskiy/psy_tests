@@ -15,41 +15,118 @@
 
 <div class="test-container">
 	<div class="question" id="question1">
-		<p>
-		  <label for="amount">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusantium officiis aperiam laborum reiciendis expedita quae deserunt ducimus nulla commodi ipsam eos itaque consequuntur, corporis, sed! Aliquid laudantium reiciendis laboriosam!</label>
-		</p>
-	 
+		<p>Я стремлюсь изучить себя.</p>
 		<div class="slider-container">
 			<div id="slider"></div>
-			<input type="text" id="amount" readonly style="border:0;">
+			<span id="amount"></span>
 		</div>
 	</div>
-
 	<div class="question" id="question2">
-		<p>
-		  <label for="amount">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusantium officiis aperiam laborum reiciendis expedita quae deserunt ducimus nulla commodi ipsam eos itaque consequuntur, corporis, sed! Aliquid laudantium reiciendis laboriosam!</label>
-		</p>
-	 
+		<p>Я оставляю время для развития, как бы ни был занят делами.</p>
 		<div class="slider-container">
 			<div id="slider"></div>
-			<input type="text" id="amount" readonly style="border:0;">
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question3">
+		<p>Возникающие препятствия стимулируют мою активность.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question4">
+		<p>Я ищу обратную связь, так как это помогает мне узнать и оценить себя.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question5">
+		<p>Я рефлексирую свою деятельность, выделяя для этого специальное время.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question6">
+		<p>Я анализирую свои чувства и опыт.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question7">
+		<p>Я много читаю.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question8">
+		<p>Я широко дискутирую по интересующим меня вопросам.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question9">
+		<p>Я верю в свои возможности.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question10">
+		<p>Я стремлюсь быть более открытым человеком.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question11">
+		<p>Я осознаю то влияние, которое оказывают на меня окружающие люди.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question12">
+		<p>Я управляю своим профессиональным развитием и получаю положительные результаты.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question13">
+		<p>Я получаю удовольствие от освоения нового.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question14">
+		<p>Возрастающая ответственность не пугает меня.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
+		</div>
+	</div>
+	<div class="question" id="question15">
+		<p>Я положительно отнес(лась)ся бы к продвижению по службе.</p>
+		<div class="slider-container">
+			<div id="slider"></div>
+			<span id="amount"></span>
 		</div>
 	</div>
 
-	<div class="question" id="question3">
-		<p>
-		  <label for="amount">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusantium officiis aperiam laborum reiciendis expedita quae deserunt ducimus nulla commodi ipsam eos itaque consequuntur, corporis, sed! Aliquid laudantium reiciendis laboriosam!</label>
-		</p>
-	 
-		<div class="slider-container">
-			<div id="slider"></div>
-			<input type="text" id="amount" readonly style="border:0;">
-		</div>
-	</div>
-	<div class="result_button">
+
+</div>
+<div class="result_button">
 		<input class="show_result" type="button" value="Показать результат">
 	</div>
+<div id="results">
+	
 </div>
-<div id="results"></div>
 </body>
 </html>

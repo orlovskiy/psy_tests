@@ -26,21 +26,88 @@ $data=$r['range_test'];
 
 
 
-<div id="question1">
-	<div class="answer"></div>
-</div>
-<div id="question2">
-	<div class="answer"></div>
-</div>
-<div id="question3">
-	<div class="answer"></div>
-</div>
+<div class="question" id="question1">
+		<p>Я стремлюсь изучить себя.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question2">
+		<p>Я оставляю время для развития, как бы ни был занят делами.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question3">
+		<p>Возникающие препятствия стимулируют мою активность.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question4">
+		<p>Я ищу обратную связь, так как это помогает мне узнать и оценить себя.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question5">
+		<p>Я рефлексирую свою деятельность, выделяя для этого специальное время.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question6">
+		<p>Я анализирую свои чувства и опыт.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question7">
+		<p>Я много читаю.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question8">
+		<p>Я широко дискутирую по интересующим меня вопросам.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question9">
+		<p>Я верю в свои возможности.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question10">
+		<p>Я стремлюсь быть более открытым человеком.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question11">
+		<p>Я осознаю то влияние, которое оказывают на меня окружающие люди.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question12">
+		<p>Я управляю своим профессиональным развитием и получаю положительные результаты.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question13">
+		<p>Я получаю удовольствие от освоения нового.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question14">
+		<p>Возрастающая ответственность не пугает меня.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
+	<div class="question" id="question15">
+		<p>Я положительно отнес(лась)ся бы к продвижению по службе.</p>
+			<p id="answer"></p>
+		</div>
+	</div>
 
 
 <script>
 		var data=JSON.parse('<?=$data?>');
+		console.log(data)
 		for (key in data){
-			var id = '#'+key+' .answer';
+			var id = '#'+key+' #answer';
 			target = $(id)
 			target.text(data[key]);
 		}

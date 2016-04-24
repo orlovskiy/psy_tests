@@ -11,8 +11,7 @@
 }
 .slider-container{
 	display: inline-block;
-	min-width: 280px;
-	width: 50%;
+	min-width: 480px
 }
 
 #slider{
@@ -58,4 +57,8 @@
 }
 #results{
 	display: none;
+}
+#answer{
+	min-width: unset;
+	width: unset;
 }
