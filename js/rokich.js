@@ -90,7 +90,7 @@ window.onload = function () {
 		};
 		results_a_string=JSON.stringify(results_a);
 		results_b_string=JSON.stringify(results_b);
-		var anon_id="<?=$_GET['id']?>"
+		var anon_id= $('.anon_id').val()
 		var test_id='rokich';
 
 

@@ -27,12 +27,8 @@ $(function(){
   		var amount = $(this).find('#amount')
   		answers[question_id] = amount.val()
   	});
-    var data_to_send = JSON.stringify(answers)
-    var anon_id = $('.anon_id').val()
-    var test_id = 'range_test'
-    $.post('../transmitter.php', {'data_to_send':data_to_send, 'anon_id':anon_id, 'test_id':test_id});
   	/*console.log(answers)*/
-    $('.show_result').slideUp('fast', function(){});
+    $('.test-container').css('margin-bottom', '100px')
   	$('#results').slideDown('fast', function(){});
   });
 });

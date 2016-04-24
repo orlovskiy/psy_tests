@@ -84,8 +84,8 @@ $perks2=preg_split($regex1, $perks2text);
 		</p>
 		<input class="gotit" type="button" value="Правила ясны">
 	</div><br>
-	<input type="button" class="done_button" value="Ок, дальше">
-	<input type="button" id="test_done" value="Ок, дальше">
+	<input type="button" style="display:none;" class="done_button" value="Ок, дальше">
+	<input type="button" style="display:none;" id="test_done" value="Ок, дальше">
 	<div class="" id="answers1"><div class="cap"></div></div>
 	<div class="perks1_container">
 		<div class="cap"></div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style/admin.css">
-	<title>Тест Кеттела. Результаты</title>
+	<title>Результаты</title>
 </head>
 <body>
 <?
@@ -14,7 +14,6 @@ while($r=mysql_fetch_assoc($result)){
 		$usrid=$r['id'];
 		/*array_shift($r);*/
 	$usr=$r['id']." ".$r['textid']." ".$r['usr'];
-	
 
 	$a=strlen($r['answer']);
 	if($a>0){
@@ -38,6 +37,12 @@ while($r=mysql_fetch_assoc($result)){
 			$status3="none";
 			};
 
+	$d=strlen($r['range_test']);
+		if($d>>0){
+	 	$status4="inline-block";
+		}else{
+			$status4="none";
+			};
 	?>
 	<div class="usr_wrapper">
 		<div class="usr"><?=$usr?> </div>
@@ -51,6 +56,10 @@ while($r=mysql_fetch_assoc($result)){
 
 			<div class="rokich">
 			<a class="rokich_link" style="display:<?=$status3?>" href="../3.rokich/reader.php?id=<?=$r['id']?>">Тест Рокича</a>
+			</div>
+
+			<div class="range_test">
+			<a class="range_link" style="display:<?=$status4?>" href="../4.range_test/reader.php?id=<?=$r['id']?>">Тест какой-то</a>
 			</div>
 		</div>
 		<?

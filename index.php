@@ -62,6 +62,7 @@
 			<div ><a href="" id="test1"><p>Тест Кеттела</p></a></div>
 			<div ><a href="" id="test2"><p>Мотивационный рельеф личности</p></a></div>
 			<div ><a href="" id="test3"><p>Тест Рокича</p></a></div>
+			<div ><a href="" id="test4"><p>Тест какой-то</p></a></div>
 		</div>
 	
 		<script type="text/javascript">
@@ -77,9 +78,11 @@
 			var kettel="1.kettel/kettel_reader.php?id="+id;
 			var relief="2.motivation_relief/relief_reader.php?id="+id;
 			var rokich="3.rokich/reader.php?id="+id;
+			var range_test="4.range_test/reader.php?id="+id;
 			$('#test1').attr("href",kettel);
 			$('#test2').attr("href",relief);
 			$('#test3').attr("href",rokich);
+			$('#test4').attr("href",range_test);
 
   	 });
 
@@ -103,13 +106,15 @@
 				$('.registred').text("Вы зарегистрированы с ID: ");	
   	 		$('.register').slideUp('fast',function(){});
   	 		$('.test_links').slideDown('fast',function(){});
-  	 		var id=$('.textid').val();
+  	 			var id=$('.textid').val();
 				var kettel="1.kettel/index.php?id="+id;
 				var relief="2.motivation_relief/index.php?id="+id;
 				var rokich="3.rokich/index.php?id="+id;
+				var range_test="4.range_test/index.php?id="+id;
 				$('#test1').attr("href",kettel);
 				$('#test2').attr("href",relief);
 				$('#test3').attr("href",rokich);
+				$('#test4').attr("href",range_test);
   	 	});
   	 	});
   	 	$('.already').on("click",function(){
@@ -123,9 +128,12 @@
 				var kettel="1.kettel/index.php?id="+id;
 				var relief="2.motivation_relief/index.php?id="+id;
 				var rokich="3.rokich/index.php?id="+id;
+				var range_test="4.range_test/index.php?id="+id;
 				$('#test1').attr("href",kettel);
 				$('#test2').attr("href",relief);
 				$('#test3').attr("href",rokich);
+				$('#test4').attr("href",range_test);
+
   	 	});
   	 	  	 	
   	 	
