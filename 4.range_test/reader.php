@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>test</title>
-	<link rel="stylesheet" href="../style/rokich.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/range_test_reader.js"></script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="../js/jquery-ui.min.js"></script>
 	<link rel="stylesheet" href="../style/range_test.css">

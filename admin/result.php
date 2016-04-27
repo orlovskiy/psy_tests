@@ -43,23 +43,34 @@ while($r=mysql_fetch_assoc($result)){
 		}else{
 			$status4="none";
 			};
+
+	$e=strlen($r['self_affirm']);
+		if($e>>0){
+	 	$status5="inline-block";
+		}else{
+			$status5="none";
+			};
 	?>
 	<div class="usr_wrapper">
 		<div class="usr"><?=$usr?> </div>
-			<div class="kettel">
+			<div class="kettel test">
 			<a class="kettel_link" style="display:<?=$status1?>" href="../1.kettel/kettel_reader.php?id=<?=$r['id']?>">тест Кеттела</a>
 			</div>
 			
-			<div class="relief">
+			<div class="relief test">
 			<a class="relief_link" style="display:<?=$status2?>" href="../2.motivation_relief/relief_reader.php?id=<?=$r['id']?>">Мотивационный профиль</a>
 			</div>
 
-			<div class="rokich">
+			<div class="rokich test">
 			<a class="rokich_link" style="display:<?=$status3?>" href="../3.rokich/reader.php?id=<?=$r['id']?>">Тест Рокича</a>
 			</div>
 
-			<div class="range_test">
+			<div class="range_test test">
 			<a class="range_link" style="display:<?=$status4?>" href="../4.range_test/reader.php?id=<?=$r['id']?>">Тест какой-то</a>
+			</div>
+
+			<div class="self_affirm test">
+			<a class="range_link" style="display:<?=$status5?>" href="../5.self_affirm/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
 			</div>
 		</div>
 		<?

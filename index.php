@@ -63,6 +63,7 @@
 			<div ><a href="" id="test2"><p>Мотивационный рельеф личности</p></a></div>
 			<div ><a href="" id="test3"><p>Тест Рокича</p></a></div>
 			<div ><a href="" id="test4"><p>Тест какой-то</p></a></div>
+			<div ><a href="" id="test5"><p>Стратегии самоутверждения</p></a></div>
 		</div>
 	
 		<script type="text/javascript">
@@ -79,10 +80,12 @@
 			var relief="2.motivation_relief/relief_reader.php?id="+id;
 			var rokich="3.rokich/reader.php?id="+id;
 			var range_test="4.range_test/reader.php?id="+id;
+			var self_affirm="5.self_affirm/reader.php?id="+id;
 			$('#test1').attr("href",kettel);
 			$('#test2').attr("href",relief);
 			$('#test3').attr("href",rokich);
 			$('#test4').attr("href",range_test);
+			$('#test5').attr("href",self_affirm);
 
   	 });
 
@@ -111,10 +114,12 @@
 				var relief="2.motivation_relief/index.php?id="+id;
 				var rokich="3.rokich/index.php?id="+id;
 				var range_test="4.range_test/index.php?id="+id;
+				var self_affirm="5.self_affirm/index.php?id="+id;
 				$('#test1').attr("href",kettel);
 				$('#test2').attr("href",relief);
 				$('#test3').attr("href",rokich);
 				$('#test4').attr("href",range_test);
+				$('#test5').attr("href",self_affirm);
   	 	});
   	 	});
   	 	$('.already').on("click",function(){
@@ -129,10 +134,12 @@
 				var relief="2.motivation_relief/index.php?id="+id;
 				var rokich="3.rokich/index.php?id="+id;
 				var range_test="4.range_test/index.php?id="+id;
+				var self_affirm="5.self_affirm/index.php?id="+id;
 				$('#test1').attr("href",kettel);
 				$('#test2').attr("href",relief);
 				$('#test3').attr("href",rokich);
 				$('#test4').attr("href",range_test);
+				$('#test5').attr("href",self_affirm);
 
   	 	});
   	 	  	 	

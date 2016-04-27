@@ -18,19 +18,21 @@
 	display: inline-block;
 	width: 249px;
 	height: 59px;
-	border: 1px solid #56c7ff;
+	border: none;
 	color: white;
 	border-radius: 4px;
 	background: #56c7ff;
+	box-shadow:  1px 1px 1px 1px #7BA8B8;
 	font-size: 15px;
 	transition: all .4s ease-in-out;
 }
 .show_result_inactive{
 	outline: none;
+	box-shadow:none;
 	display: inline-block;
 	width: 249px;
 	height: 59px;
-	border: 1px solid grey;
+	border: none;
 	color: white;
 	border-radius: 4px;
 	background: grey;
