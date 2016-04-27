@@ -19,8 +19,7 @@ $result=mysql_query($query);
 $r=mysql_fetch_assoc($result);
 $usr=$r['id']." ".$r['textid']." ".$r['usr'];
 $data=$r['self_affirm'];
-preg_match_all('/({.*})\*({.*})/', $data, $data2);
-var_dump($data2[2]);
+var_dump($data);
 ?>
 
 <div class="usr"><?=$usr?></div>
@@ -31,8 +30,7 @@ var_dump($data2[2]);
 
 
 <script type="text/javascript">
-		var questions=JSON.parse('<?=$data2[1][0]?>');
-		var answers=JSON.parse('<?=$data2[2][0]?>');
+		var answers=JSON.parse('<?=$data?>');
 		for (key in answers){	
 			$('.results').append('<div class="question">'+questions[key]+'<div class="answer">'+answers[key]+'</div></div>')
 		}

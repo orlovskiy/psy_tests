@@ -9,23 +9,22 @@
 	});
 		var answers = {}
 		var questions = {}
+		var data = []
 		$('.show_result').on('click',function(){
 			if ($('.question .answer input:checked').length == $('.question').length){
 				$('#results').slideDown('fast',function(){});
-				var i = 1
+				var i = 1;
 				$('.question').each(function(){
+					var question_id = "question"+i;
 					var question = $(this).find('p').text()
 					var answer = $(this).find('.answer').find('input:checked').next().text();
-					var key = "question" + i
-					answers[key] = answer.replace(/[\r\n]/g,'')
-					questions[key] = question.replace(/[\r\n]/g,'')
-					i++
+					questions[question_id] = question
+					answers[question_id] = answer
 				});
-				console.log(questions)
-				console.log(answers)
+				data.push(questions,answers)
 				var anon_id = $('.anon_id').val()
 				var test_id = 'self_affirm'
-				var data_to_send = JSON.stringify(questions) + "*" + JSON.stringify(answers)
+				var data_to_send = JSON.stringify(data)
 				$.post('../transmitter.php', {'data_to_send':data_to_send, 'anon_id':anon_id, 'test_id':test_id});
 
 
