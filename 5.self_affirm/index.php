@@ -10,6 +10,45 @@
 	<link rel="stylesheet" href="../style/self_affirm.css">
 </head>
 <body>
+<script>
+
+	$(function(){
+		$('input').on('change',function(){
+			
+			var n = $('.question .answer input:checked').length == $('.question').length
+			console.log("n is: "+n)
+		if(n){
+			$('.show_result_inactive').toggleClass('show_result_inactive')
+		}
+	});
+		$('.show_result').on('click',function(){
+			if ($('.question .answer input:checked').length == $('.question').length){
+				$('#results').slideDown('fast',function(){});
+				$('.question').each(function(){
+					var answers = {}
+					var question = $(this).find('p').text()
+					var answer = $(this).find('.answer').find('input:checked').next().text()
+					console.log(question + answer)
+				});
+			}else{
+				$('.question').css("-webkit-filter",'blur(10px)',500);
+				$('.show_result').css("-webkit-filter",'blur(2px)',500);
+				var missed = [];
+				$('form:not(:valid)').each(function(){missed.push($(this).attr('id'))});
+				var links_to_missed = missed.map(function(missed_piece){
+					return "<a href = '#"+ missed_piece +"' >"+ missed_piece +"</a>"
+				});
+				missed = links_to_missed.join(', ')
+				$('.reminder p').text('');
+				$('.reminder p').append(missed);
+				$('.reminder').fadeIn('slow',function(){})
+				setTimeout(function(){$('.reminder').fadeOut('slow',function(){})},2000);
+				setTimeout(function(){$('.question').css("-webkit-filter",'blur(0px)',500)},2500);
+				setTimeout(function(){$('.show_result').css("-webkit-filter",'blur(0px)',500)},2000);
+			}
+		});
+	});
+</script>
 <?php 
 $text = "1.	Вы приехали на отдых.
  	Обязательно с кем-нибудь познакомитесь.
@@ -237,19 +276,29 @@ preg_match_all($regex, $text, $res);
 
 foreach ($res[0] as $key => $value) {
 	preg_match_all($regex2, $value, $res2);
-	?>
+	?>	<form action="" id = "<?=$key+1?>">
 		<div class="question" id="question<?=$key+1?>">
 		<p><?=$res2[1][0]?></p>
 	<?
 	for ($i=1; $i < count($res2[0]); $i++) { 
 		?>
 			<div class="answer">
-				<label for="q<?=$key+1?>a<?=$i?>"><?=$res2[0][$i]?></label><input type="radio" value ="<?=$i?>"name = "q<?=$key+1?>choice" id="q<?=$key+1?>a<?=$i?>">
+				<input class = "radios" type="radio" required value ="<?=$i?>"name = "question<?=$key+1?>choice" id="q<?=$key+1?>a<?=$i?>">
+				<label for="q<?=$key+1?>a<?=$i?>"><?=$res2[0][$i]?></label>
 			</div>
 		<?
 	}
-	?></div><?
+	?></div></form><?
 }
 ?>
+<div class="result_button">
+		<input class="show_result_inactive show_result" type="button" value="Показать результат">
+	</div>
+<div id="results">
+	
+</div>
+<div class="reminder">Пожалуйста, ответьте на все вопросы
+<p><a href=""></a></p>
+</div>
 </body>
 </html>
