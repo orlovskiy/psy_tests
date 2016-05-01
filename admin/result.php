@@ -50,6 +50,14 @@ while($r=mysql_fetch_assoc($result)){
 		}else{
 			$status5="none";
 			};
+
+
+	$f=strlen($r['self_evaluate']);
+		if($f>>0){
+	 	$status6="inline-block";
+		}else{
+			$status6="none";
+			};
 	?>
 	<div class="usr_wrapper">
 		<div class="usr"><?=$usr?> </div>
@@ -70,7 +78,11 @@ while($r=mysql_fetch_assoc($result)){
 			</div>
 
 			<div class="self_affirm test">
-			<a class="range_link" style="display:<?=$status5?>" href="../5.self_affirm/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
+			<a class="affirm_link" style="display:<?=$status5?>" href="../5.self_affirm/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
+			</div>
+
+			<div class="self_evaluate test">
+			<a class="evaluate_link" style="display:<?=$status6?>" href="../6.self_evaluate/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
 			</div>
 		</div>
 		<?
