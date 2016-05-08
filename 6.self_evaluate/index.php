@@ -124,6 +124,8 @@
 		<input class="show_result" type="button" value="Показать результат">
 	</div>
 <div id="results">
+	<div class="motivation">Уровень сформированности мотивационной готовности к педагогическому саморазвитию: </div>
+	<div class="cognitive">Уровень сформированности когнитивной готовности к педагогическому саморазвитию: </div>
 </div>
 
 </body>
