@@ -125,7 +125,7 @@
 		<input class="show_result" type="button" value="Показать результат">
 	</div>
 <div id="results">
-	
+<p class="your_score">Cумма баллов: </p><p class="description"></p>
 </div>
 </body>
 </html>

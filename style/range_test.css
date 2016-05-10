@@ -56,7 +56,6 @@
 	border: none; 
 }
 #results{
-	display: none;
 }
 #answer{
 	min-width: unset;

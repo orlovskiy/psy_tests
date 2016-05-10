@@ -100,15 +100,38 @@ $data=$r['range_test'];
 		</div>
 	</div>
 
-
+	<div id="results">
+	<p class="your_score">Cумма баллов: </p><p class="description"></p>
 <script>
+	  var gradations = {1:'нет',2:'не совсем',3:'нечто среднее',4:'почти',5:'абсолютно точно'};
+	  var description ={1:"Вы активно реализуете свои потребности в саморазвитии",
+	  2:"У Вас отсутствует сложившаяся система саморазвития",
+	  3:"Есть основание полагать, что саморазвитие на данный момент остановилось"};
+	  var gradations_reversed = {}
+      var sum  = 0;
+      
+      for(key in gradations){
+	        gradations_reversed[gradations[key]] = key;
+        }
+
+
 		var data=JSON.parse('<?=$data?>');
 		console.log(data)
 		for (key in data){
 			var id = '#'+key+' #answer';
 			target = $(id)
 			target.text(data[key]);
+			sum += Number(gradations_reversed[data[key]]);
 		}
+
+	  
+	  $('.your_score').append(sum)
+      if(sum>=55) var desc = description[1];
+      else if (sum >=36 && sum <=54) desc = description[2];
+      else if (sum >= 15 && sum <= 35) desc = description[3];
+      
+      $('.description').text(desc)
+
 </script>
 </body>
 </html>
