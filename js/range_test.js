@@ -50,7 +50,7 @@ $(function(){
     var test_id = 'range_test'
     $.post('../transmitter.php', {'data_to_send':data_to_send, 'anon_id':anon_id, 'test_id':test_id});
   	/*console.log(answers)*/
-    $('.show_result').slideUp('fast', function(){});
+    $('.show_result').fadeOut('fast', function(){});
       
       $('.your_score').append(sum)
       if(sum>=55) desc = description[1];
@@ -58,7 +58,7 @@ $(function(){
       else if (sum >= 15 && sum <= 35) desc = description[3];
       
       $('.description').text(desc)
-  	$('#results').slideDown('fast', function(){});
+  	$('#results').fadeIn('fast', function(){});
   });
 });
 

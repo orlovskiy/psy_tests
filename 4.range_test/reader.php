@@ -109,14 +109,13 @@ $data=$r['range_test'];
 	  3:"Есть основание полагать, что саморазвитие на данный момент остановилось"};
 	  var gradations_reversed = {}
       var sum  = 0;
-      
+      $('#results').css('display','inline-block')
       for(key in gradations){
 	        gradations_reversed[gradations[key]] = key;
         }
 
 
 		var data=JSON.parse('<?=$data?>');
-		console.log(data)
 		for (key in data){
 			var id = '#'+key+' #answer';
 			target = $(id)
