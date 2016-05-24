@@ -6,6 +6,14 @@
 	<title>Результаты</title>
 </head>
 <body>
+<table>
+<th>Пользователь</th>
+<th>Тест Кеттела</th>
+<th>Мотивационный профиль</th>
+<th>Тест Рокича</th>
+<th>Реализация потребностей в саморазвитии</th>
+<th>Стратегии самоутверждения</th>
+<th>Саморазвитие</th>
 <?
 include '../database.php';
 $query="SELECT * FROM test";
@@ -59,37 +67,39 @@ while($r=mysql_fetch_assoc($result)){
 			$status6="none";
 			};
 	?>
-	<div class="usr_wrapper">
-		<div class="usr"><?=$usr?> </div>
-			<div class="kettel test">
-			<a class="kettel_link" style="display:<?=$status1?>" href="../1.kettel/kettel_reader.php?id=<?=$r['id']?>">тест Кеттела</a>
-			</div>
+	<tr class="usr_wrapper">
+		<td class="usr"><?=$usr?> </td>
+			<td class="kettel test">
+			<a class="kettel_link" href="../1.kettel/kettel_reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status1?>" alt=""></div></a>
+			</td>
 			
-			<div class="relief test">
-			<a class="relief_link" style="display:<?=$status2?>" href="../2.motivation_relief/relief_reader.php?id=<?=$r['id']?>">Мотивационный профиль</a>
-			</div>
+			
+			<td class="relief test">
+			<a class="relief_link" href="../2.motivation_relief/relief_reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status2?>" alt=""></div></a>
+			</td>
 
-			<div class="rokich test">
-			<a class="rokich_link" style="display:<?=$status3?>" href="../3.rokich/reader.php?id=<?=$r['id']?>">Тест Рокича</a>
-			</div>
+			<td class="rokich test">
+			<a class="rokich_link" href="../3.rokich/reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status3?>" alt=""></div></a>
+			</td>
 
-			<div class="range_test test">
-			<a class="range_link" style="display:<?=$status4?>" href="../4.range_test/reader.php?id=<?=$r['id']?>">Тест какой-то</a>
-			</div>
+			<td class="range_test test">
+			<a class="range_link" href="../4.range_test/reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status4?>" alt=""></div></a>
+			</td>
 
-			<div class="self_affirm test">
-			<a class="affirm_link" style="display:<?=$status5?>" href="../5.self_affirm/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
-			</div>
+			<td class="self_affirm test">
+			<a class="affirm_link" href="../5.self_affirm/reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status5?>" alt=""></div></a>
+			</td>
 
-			<div class="self_evaluate test">
-			<a class="evaluate_link" style="display:<?=$status6?>" href="../6.self_evaluate/reader.php?id=<?=$r['id']?>">Стратегии самоутверждения</a>
-			</div>
-		</div>
+			<td class="self_evaluate test">
+			<a class="evaluate_link" href="../6.self_evaluate/reader.php?id=<?=$r['id']?>"><div  style="display:<?=$status6?>" alt=""></div></a>
+			</td>
+		</tr>
 		<?
 }
 			
 
 
 ?>
+</table>
 <div><a href="../index.php">Главная</a></div>
 </body>

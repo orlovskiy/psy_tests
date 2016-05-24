@@ -62,7 +62,7 @@
 			<div ><a href="" id="test1"><p>Тест Кеттела</p></a></div>
 			<div ><a href="" id="test2"><p>Мотивационный рельеф личности</p></a></div>
 			<div ><a href="" id="test3"><p>Тест Рокича</p></a></div>
-			<div ><a href="" id="test4"><p>Тест какой-то</p></a></div>
+			<div ><a href="" id="test4"><p>Реализация потребностей с саморазвитии</p></a></div>
 			<div ><a href="" id="test5"><p>Стратегии самоутверждения</p></a></div>
 			<div ><a href="" id="test6"><p>Стратегии саморазвития</p></a></div>
 		</div>

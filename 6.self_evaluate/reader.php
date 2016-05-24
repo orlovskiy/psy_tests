@@ -83,6 +83,10 @@ $data=$r['self_evaluate'];
 			<p class="answer"></p>
 		</div>
 	</div>
+	<div id="results">
+	<div class="motivation">Уровень сформированности мотивационной готовности к педагогическому саморазвитию: </div>
+	<div class="cognitive">Уровень сформированности когнитивной готовности к педагогическому саморазвитию: </div>
+</div>
 	<script>
 	window.onload = function(){
 
@@ -91,7 +95,38 @@ $data=$r['self_evaluate'];
 		for (key in answers){
 			$('#'+key).find('.answer').text(answers[key])
 		}
+		$('#results').slideDown('fast', function(){
+      var motiv_score = 0;
+      var cognitive_score = 0;
+        for (var i = 1; i<=9; i++){
+          motiv_score += Number($('.question:nth-child('+i+') .answer').text())
+        }
+        if(motiv_score>=55){
+          motiv_score = 'низкий уровень (' + motiv_score + ' баллов)'
+        }
+        else if(motiv_score>=36){
+          motiv_score = 'средний уровень (' + motiv_score + ' баллов)'
+        }
+        else if(motiv_score<=35){
+          motiv_score = 'высокий уровень (' + motiv_score + ' баллов)'
+        }
+        for (var i = 10; i<=15; i++){
+          cognitive_score += Number($('.question:nth-child('+i+') .answer').text())
+        }
+        if(cognitive_score>=37){
+          cognitive_score = 'низкий уровень (' + cognitive_score + ' баллов)'
+        }
+        else if(cognitive_score>=24){
+          cognitive_score = 'средний уровень (' + cognitive_score + ' баллов)'
+        }
+        else if(cognitive_score<=23){
+          cognitive_score = 'высокий уровень (' + cognitive_score + ' баллов)'
+        }
 
+        
+        $('.motivation').append(motiv_score)
+        $('.cognitive').append(cognitive_score)
+    });
 
 	}
 	</script>

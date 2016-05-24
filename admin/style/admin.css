@@ -1,12 +1,37 @@
-
+table{
+	border-collapse: collapse;
+}
+th{
+	border-collapse: collapse;
+	border:2px solid black;
+}
+tr{
+	height: 30px !important;
+}
+td{
+	position: relative;
+	height: 30px !important;
+	border-collapse: collapse;
+	border:2px solid black;
+}
+a{
+	height: 100%;
+	width: 100%;
+}
+a>div{
+	position: absolute;
+	top: 2px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 0;bottom: 0;left: 0;top: 0;
+	margin:auto;
+	background: url('test.png') 50% no-repeat;
+	background-size: contain;
+}
 .usr_wrapper{
-	display: block;
 }
 .usr{
-	width: 400px;
-	display: inline-block;
 }
 .test{
-	width: 100px;
-display: inline-block;
 }
